@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.mainText{
+	font-size : 30px;
+	margin-left : 46%;
+	text-decoration: none;
+}
+.nav>li{
+	list-style : none;
+	display : inline-block;
+}
+.subNav{
+	list-style : none;
+	padding : 0px;
+}
+.subNav>li{
+	display : none;
+}
+.navTopManu{
+	display : inline-block;
+}

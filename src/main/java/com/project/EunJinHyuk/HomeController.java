@@ -28,11 +28,4 @@ public class HomeController {
 		
 		return "/index";
 	}
-	
-	@RequestMapping(value = "/ggulggul/ggulggulMain", method = RequestMethod.GET)
-	public String ggulggulMain(Locale locale, Model model) {
-		
-		return "ggulggul/ggulggulMain";
-	}
-	
 }

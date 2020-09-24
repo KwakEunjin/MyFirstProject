@@ -1,26 +1,19 @@
 package com.project.ggulggulController;
 
-import java.util.Locale;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.ui.Model;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.project.EunJinHyuk.HomeController;
-
+@Controller
 public class GgulggulController {
 	
-private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
-	
-	@RequestMapping(value = "/views/ggulggul/ggulggulMain", method = RequestMethod.GET)
-	public ModelAndView  ggulggulMain(Locale locale) {
+	@RequestMapping(value = "/ggulggul/ggulggulMain", method = RequestMethod.GET)
+	public ModelAndView  ggulggulMain() {
 		
-		ModelAndView mv = new ModelAndView();
+		ModelAndView mv = new ModelAndView("/ggulggul/ggulggulMain");
 		
-		mv.setViewName("/ggulggul/ggulggulMain");
+		//mv.setViewName();
 		return mv;
 	}
 }

@@ -11,13 +11,12 @@
 <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 
 <link href="/css/main.css?ver=1.8" rel="stylesheet" type="text/css"/>
-
 </head>
 <body>
 
 <header>
 	<div>
-		<a href="/views/ggulggul/ggulggulMain" class="mainText" >공쥬와 꿀꿀</a>
+		<a href="/ggulggul/ggulggulMain" class="mainText" >공쥬와 꿀꿀</a>
 	</div>
 </header>
 

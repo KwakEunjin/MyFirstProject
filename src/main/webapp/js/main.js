@@ -5,3 +5,13 @@ $(".nav").children("ul").find("li").mouseover(function(){
 $(".nav").mouseleave(function(){
 		$(".submenu").hide();
 })
+function goBoard(url){
+	$.ajax({
+		url : url,
+		type : "GET",
+		dataType : "html",
+		success:function(data){
+			$(".write").html(data);
+		}
+	})
+}

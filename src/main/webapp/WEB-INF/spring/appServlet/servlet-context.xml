@@ -16,10 +16,7 @@
 	<resources mapping="/resources/**" location="/resources/" />
 	<resources location="/js/" mapping="/js/**"/>
 	<resources location="/css/" mapping="/css/**"/>
-	<resources location="/img/" mapping="/img/**"/>
-
-
-
+	<resources location="/images/" mapping="/images/**"/>
 	
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -28,7 +25,5 @@
 	</beans:bean>
 	
 	<context:component-scan base-package="com.project.EunJinHyuk" />
-	
-	
 	
 </beans:beans>

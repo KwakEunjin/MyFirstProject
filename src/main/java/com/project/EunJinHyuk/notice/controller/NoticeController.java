@@ -22,21 +22,21 @@ public class NoticeController {
 	private NoticeService noticeService;
 	
 	@RequestMapping(value="/notice/notice") 
-	public ModelAndView goNotice(Map<String,Object> commandMap) throws Exception { 
-		logger.debug(this.getClass().toString());
-		
-		ModelAndView mv = new ModelAndView("/notice/notice"); 
-		return mv;
-	}
-	
-	@RequestMapping(value="/notice/openNoticeList.do") 
-	public ModelAndView openSampleBoardList(Map<String,Object> commandMap) throws Exception { 
+	public ModelAndView selectNoticeList(Map<String,Object> commandMap) throws Exception { 
 		logger.debug(this.getClass().toString());
 		
 		ModelAndView mv = new ModelAndView("/notice/notice"); 
 		List<Map<String,Object>> list = noticeService.selectNoticeList(commandMap); 
 		
 		mv.addObject("list", list); 
+		return mv;
+	}
+	
+	@RequestMapping(value="/notice/writeNotice") 
+	public ModelAndView writeNotice(Map<String,Object> commandMap) throws Exception { 
+		logger.debug(this.getClass().toString());
+		
+		ModelAndView mv = new ModelAndView("/notice/writeNotice"); 
 		return mv;
 	}
 

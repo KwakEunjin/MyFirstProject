@@ -1,12 +1,13 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ page session="false" %>
+<link href="/css/notice/notice.css?ver=2020092631" rel="stylesheet" type="text/css"/>
 <html>
 <head>
 	<title>게시판</title>
 </head>
 <script>
-function listNotice(){
+/* function listNotice(){
 	  
     var url = "/notice/openNoticeList.do";
       
@@ -22,49 +23,67 @@ function listNotice(){
             alert(error);
         }  
     });
-}
+} */
 
 </script>
 <body>
-	<h2>게시판 목록</h2>
-	<button onclick="listNotice"></button>
-	
-	<table style="border:1px solid #ccc">
-		<colgroup>
-			<col width="10%"/>
-			<col width="*"/>
-			<col width="15%"/>
-			<col width="20%"/>
-		</colgroup>
+	<div class="notice_body">
+		<div class="notice_title">
+			<img alt="" src="/images/notice/title_icon.png">
+			<h2>공지사항</h2>
+			<div class="notice_btn">
+				<a href="/notice/writeNotice">글쓰기</a>
+			</div>
+		</div>
 		
-		<thead>
-		<tr>
-			<th scope="col">글번호</th>
-			<th scope="col">제목</th>
-			<th scope="col">조회수</th>
-			<th scope="col">작성일</th>
-		</tr> 
-		</thead> 
+		<table class="notice_tb1">
+			<colgroup>
+				<col width="110px"/>
+				<col width="*"/>
+				<col width="110px"/>
+				<col width="110px"/>
+				<col width="110px"/>
+			</colgroup>
+			
+			<thead>
+			<tr class="tr_title">
+				<th scope="col">글번호</th>
+				<th scope="col">제목</th>
+				<th scope="col">작성일자</th>
+				<th scope="col">작성자</th>
+				<th scope="col">조회수</th>
+			</tr> 
+			</thead>
+			<tr class="tr_list">
+				<td class="td_center">1</td>
+				<td>제목</td>
+				<td class="td_center">2020-09-20</td>
+				<td class="td_center">관리자</td>
+				<td class="td_center">1</td>
+			</tr> 
+			<tr class="tr_list">
+				<td class="td_center">2</td>
+				<td>제목</td>
+				<td class="td_center">2020-09-26</td>
+				<td class="td_center">관리자</td>
+				<td class="td_center">10</td>
+			</tr> 
+		</table>
 		
-<%-- 		<tbody> 
-			<c:choose>
-				<c:when test="${fn:length(list) > 0}">
-					<c:forEach items="${list }" var="row">
-						<tr>
-							<td>${row.IDX }</td>
-							<td>${row.TITLE }</td>
-							<td>${row.HIT_CNT }</td>
-							<td>${row.CREA_DTM }</td>
-						</tr>
-					</c:forEach>
-				</c:when>
-				<c:otherwise>
-					<tr>
-						<td colspan="4">조회된 결과가 없습니다.</td>
-					</tr>
-				</c:otherwise>
-			</c:choose>
-		</tbody> --%>
-	</table>
+		<!-- 페이징처리 -->
+		<div class="notice_paging">
+		1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
+		</div>
+		
+		<!-- 검색 -->
+		<div class="notice_search">
+			<select>
+				<option value="1" title="작성자">작성자</option>
+				<option value="2" title="제목">제목</option>
+			</select>
+			<input type="text" width="100px">
+			<a href="/notice/search">검색</a>
+		</div>
+	</div>
 </body>
 </html>

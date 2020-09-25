@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+.notice_body {
+	margin: 3em;
+	min-width: 915px;
+}
+
+/* 게시판 title설정 */
+.notice_title a {
+	background: #5D5D5D;
+    color: white;
+    border-width: 1px;
+    border-radius: 5px;
+    display: block;
+    width: 80px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+    margin: 0 0 5px 3px;
+}
+.notice_title img {    
+	position: absolute;
+    width: 30px;
+    align-items: center;
+    margin-top: 4px;
+}
+.notice_title h2 {
+	margin-left: 30px;
+    color: #5D5D5D;
+}
+
+/* 게시판 글 목록 table 설정 */
+.notice_tb1 {
+	width:100%;
+    margin: 0 0 5px 0;
+}
+.tr_title {
+	background: #E6B9B8;
+    border: 1px solid white;
+    color: white;
+    height: 35px;
+    font-size: 1em;
+}
+.tr_list td {
+    padding: 3px 1em;
+    min-width:110px;
+}
+.td_center {
+	text-align-last: center;
+}
+
+/* 공지사항 페이지처리 설정 */
+.notice_paging {
+    text-align: center;
+    margin: 1em 0;
+}
+
+/* 공지사항 하단 검색범위 설정 */
+.notice_search {
+    text-align: center;
+}
+.notice_search select{
+    border: 1px solid #5D5D5D;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.notice_search input{
+    border: 1px solid #5D5D5D;
+    padding: 5px;
+    height: 30px;
+    width: 250px;
+    border-radius: 3px;
+}
+.notice_search a{
+	background: #5D5D5D;
+    color: white;
+    border-width: 1px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 80px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 3px 5px 0;
+}

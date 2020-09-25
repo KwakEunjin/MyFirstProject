@@ -4,5 +4,9 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 
-</body>
-</html>
+<section>
+	<div class="write">
+	
+	</div>
+</section>
+<%@ include file="/WEB-INF/include/footer.jsp"%>

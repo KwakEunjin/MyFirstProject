@@ -1,21 +1,23 @@
 @charset "UTF-8";
 
+li{
+	list-style: none;	
+}
+a{
+	text-decoration: none;
+}
 .mainText{
 	font-size : 30px;
 	margin-left : 46%;
 	text-decoration: none;
 }
-.nav>li{
-	list-style : none;
-	display : inline-block;
+.nav ul{
+	display : inline-block;	
 }
-.subNav{
-	list-style : none;
-	padding : 0px;
-}
-.subNav>li{
+.submenu{
 	display : none;
 }
-.navTopManu{
-	display : inline-block;
+.submenu ul{
+	display : inline-block;	
 }
+

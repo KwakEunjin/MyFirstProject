@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <!-- 
 	스프링 프로젝트 만들기
 	https://hongku.tistory.com/115
@@ -23,6 +22,12 @@
 	    우리 프로젝트 HomeController.java에 "/" 메소드에 "/index"를 return 해줘서 prefix + /index + suffix 해서 화면 띄운다. 
   
  -->
+
+<!-- 
+	aws 서버 만들기
+	https://brunch.co.kr/@topasvga/17
+ -->
+ 
 <!-- 
 	2021.03.30 에러 발생
 	beans:beans Failed to read schema document 'https://www.springframework.org/schema/beans/spring-beans.xsd', because 1) could not find the document; 2) the document could not be read; 3) the root element of the document is not <xsd:schema>.

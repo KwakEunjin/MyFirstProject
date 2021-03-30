@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+	스프링 프로젝트 만들기
+	https://hongku.tistory.com/115
+	
+	1. spring-mvc 프로젝트 만들기
+	  - 메이븐을 통해 스프링 mvc에 필요한 디펜던시를 설치
+	  - 메이븐 프로젝트 생성하면 HomeController가 자동으로 생성
+	  - @Controller 어노테이션 쓰면 Controller라고 인식
+	  
+	2. 디스패쳐(Dispatcher)가 뷰(View)를 찾는 방법
+	  - [servlet-context.xml]
+	  	prefix : view의 경로 
+	  	suffix : view의 확장자
+	  
+	3. 페이지 화면이 띄워지는 과정
+	  - web.xml > servlet-mapping > url-pattern을 /로 설정하면 디스패쳐가 가로챔
+	    디스패쳐는 controller를 어느 패키지에서 찾아야하는지 모름. 
+		그래서 servlet-context.xml의 context:component-scan에 패키지 알려줌 
+	    알려준 패키지에서 @Controller 어노테이션 붙은 파일 찾아서 @RequestMapping을 찾음
+	    찾은 @RequestMapping에서  return값으로 view의 이름을 알려줌
+	    우리 프로젝트 HomeController.java에 "/" 메소드에 "/index"를 return 해줘서 prefix + /index + suffix 해서 화면 띄운다. 
+  
+ -->
+<!-- 
+	2021.03.30 에러 발생
+	beans:beans Failed to read schema document 'https://www.springframework.org/schema/beans/spring-beans.xsd', because 1) could not find the document; 2) the document could not be read; 3) the root element of the document is not <xsd:schema>.
+	
+	spring 버전과 servlet-context.xml의 xsi:schemaLocation 버전이 달라서 그런것임, xsd 버전을 변경하여 맞출 수 있음
+	pom.xml의 org.springframework-version 버전과 맞추면 된다.
+ -->

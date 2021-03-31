@@ -3,8 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/3.1.0 https://maven.apache.org/maven-v3_1_1.xsd">
 	<modelVersion>3.1.1</modelVersion>
 	<groupId>com.project</groupId>
-	<artifactId>EunJinHyuk</artifactId>
-	<name>EunJinHyuk</name>
+	<artifactId>MyFirstProject</artifactId>
+	<name>MyFirstProject</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<properties>

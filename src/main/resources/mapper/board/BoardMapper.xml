@@ -4,6 +4,6 @@
 <mapper namespace="board">
 	<select id="boardList" resultType="hashmap">
 		select *
-		  from notice
+		  from tco_menu
 	</select>
 </mapper>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/3.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/3.1.0 https://maven.apache.org/maven-v3_1_1.xsd">
+	<modelVersion>3.1.1</modelVersion>
 	<groupId>com.project</groupId>
 	<artifactId>EunJinHyuk</artifactId>
 	<name>EunJinHyuk</name>
@@ -170,7 +170,6 @@
 			<version>4.7</version>
 			<scope>test</scope>
 		</dependency>
-		
 		
 		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
 		<dependency>

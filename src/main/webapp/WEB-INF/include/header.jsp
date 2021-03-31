@@ -7,47 +7,28 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
 <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 
 <link href="/css/main.css?ver=2.3" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-
-<header>
-	<div>
-		<a href="/ggulggul/ggulggulBoard" class="mainText" >공쥬와 꿀꿀</a>
-	</div>
-</header>
-
-<nav>
-	<div class="nav">
-		<ul>
-			<li>공주</li>
-		</ul>
-		<ul>
-			<li>꿀꿀</li>
-		</ul>
-		<div class="submenu">
-			<ul>
-				<li><a href="/notice/notice">게시판</a></li>
-			</ul>
-			<ul>
-				<li><a href="javascript:void(0);" onclick="goBoard('/ggulggul/ggulggulBoard')">게시판</a></li>
-			</ul>
+	<div id="header">
+		<div id="logo">
+			<h1><a href="#">아이콘</a></h1>
+			<p>Design by <a href="http://templated.co" rel="nofollow">나</a></p>
 		</div>
 	</div>
-</nav>
-<script>
-	function goBoard(url){
-		console.log(url);
-		$.ajax({
-			url : url,
-			type : "GET",
-			dataType : "html",
-			success:function(data){
-				$(".write").html(data);
-			}
-		})
-	}
-</script>
+	
+	<div id="menu">
+		<ul>
+			<li class="current_page_item"><a href="#">myself</a></li>
+			<li><a href="#">IT Info</a></li>
+			<li><a href="#">code review</a></li>
+			<li><a href="#">community</a></li>
+			<li class="last"><a href="#">Family Site</a></li>
+		</ul>
+	</div>
+	
+	<div id="banner"><img src="images/pics01.jpg" width="1000" height="361" alt="" /></div>
+</body>
+</html>

@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/3.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/3.1.0 https://maven.apache.org/maven-v3_1_1.xsd">
-	<modelVersion>3.1.1</modelVersion>
-	<groupId>com.project</groupId>
-	<artifactId>MyFirstProject</artifactId>
-	<name>MyFirstProject</name>
-	<packaging>war</packaging>
-	<version>1.0.0-BUILD-SNAPSHOT</version>
+	<modelVersion>3.1.1</modelVersion>		<!-- pom.xml의 모델버전 -->	
+	
+	<groupId>com.project</groupId>			<!-- 프로젝트의 그룹명 -->
+	<artifactId>MyFirstProject</artifactId>	<!-- 프로젝트를 아티팩트명 -->
+	<name>MyFirstProject</name>				<!-- 프로젝트명 -->
+	<packaging>war</packaging>				<!-- 패키지 유형 (jar,war,ear,pom 등) -->
+	<version>1.0.0-BUILD-SNAPSHOT</version>	<!-- 애플리케이션의 버전, SNAPSHOT이 붙으면 아직 개발단계라는 의미 --> 
+	
+	<!-- pom에서 사용하는 상수값 지정하는 부분 ${...}으로 표기해서 사용 가능 -->
 	<properties>
 		<java-version>15</java-version>
-		<org.springframework-version>3.1.1.RELEASE</org.springframework-version>
+		<org.springframework-version>4.3.18.RELEASE</org.springframework-version>
 		<org.aspectj-version>1.6.10</org.aspectj-version>
 		<org.slf4j-version>1.6.6</org.slf4j-version>
 	</properties>
+	
+	<!-- 필요한 외부 라이브러리 명시 -->
 	<dependencies>
 		<!-- Spring -->
 		<dependency>
@@ -27,6 +32,7 @@
 				 </exclusion>
 			</exclusions>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
@@ -46,28 +52,33 @@
 			<artifactId>slf4j-api</artifactId>
 			<version>${org.slf4j-version}</version>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>jcl-over-slf4j</artifactId>
 			<version>${org.slf4j-version}</version>
 			<scope>runtime</scope>
 		</dependency>
-		  <dependency>
-		    <groupId>org.apache.logging.log4j</groupId>
-		    <artifactId>log4j-api</artifactId>
-		    <version>2.13.3</version>
-		  </dependency>
-		  <dependency>
-		    <groupId>org.apache.logging.log4j</groupId>
-		    <artifactId>log4j-core</artifactId>
-		    <version>2.13.3</version>
-		  </dependency>
+		
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>2.13.3</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.13.3</version>
+		</dependency>
+		
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
 			<version>${org.slf4j-version}</version>
 			<scope>runtime</scope>
 		</dependency>
+		
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
@@ -114,17 +125,20 @@
 			<version>2.5</version>
 			<scope>provided</scope>
 		</dependency>
+		
 		<dependency>
 			<groupId>javax.servlet.jsp</groupId>
 			<artifactId>jsp-api</artifactId>
 			<version>2.1</version>
 			<scope>provided</scope>
 		</dependency>
+		
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
+		
 		<dependency>
 	    <groupId>commons-dbcp</groupId>
 		    <artifactId>commons-dbcp</artifactId>
@@ -137,26 +151,31 @@
 		    <artifactId>mybatis</artifactId>
 		    <version>3.4.6</version>
 		</dependency>
+		
 		<dependency>
 		    <groupId>org.mybatis</groupId>
 		    <artifactId>mybatis-spring</artifactId>
 		    <version>1.3.2</version>
 		</dependency>
+		
 		<dependency>
 		    <groupId>org.springframework</groupId>
 		    <artifactId>spring-jdbc</artifactId>
-		    <version>4.3.18.RELEASE</version>
+		    <version>${org.springframework-version}</version>
 		</dependency>
+		
 		<dependency>
 		    <groupId>com.microsoft.sqlserver</groupId>
 		    <artifactId>mssql-jdbc</artifactId>
 		    <version>8.2.2.jre8</version>
 		</dependency>
+		
 		<dependency>
 		    <groupId>net.sourceforge.jtds</groupId>
 		    <artifactId>jtds</artifactId>
 		    <version>1.3.1</version>
 		</dependency>
+		
 		<dependency>
 		    <groupId>org.springframework</groupId>
 		    <artifactId>spring-test</artifactId>
@@ -179,6 +198,7 @@
 		    <scope>provided</scope>
 		</dependency>        
 	</dependencies>
+	
     <build>
         <plugins>
             <plugin>

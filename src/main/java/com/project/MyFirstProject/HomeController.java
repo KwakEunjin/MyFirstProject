@@ -1,7 +1,5 @@
 package com.project.MyFirstProject;
 
-import java.text.DateFormat;
-import java.util.Date;
 import java.util.Locale;
 
 import org.slf4j.Logger;
@@ -20,13 +18,36 @@ public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
-	/**
-	 * Simply selects the home view to render by returning its name.
-	 */
+	/* 메인으로 이동 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String home(Locale locale, Model model) {
-		logger.info("Welcome home! The client locale is {}.", locale);
+	public ModelAndView home(Locale locale, Model model) {
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("location", "index");
+		mv.addObject("menuUrl", "main.jsp");
+		mv.setViewName("index");
 		
-		return "/index";
+		return mv;
+	}
+	
+	/* 메인으로 이동 */
+	@RequestMapping(value = "/main.do", method = RequestMethod.GET)
+	public ModelAndView main(Locale locale, Model model) {
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("location", "index");
+		mv.addObject("menuUrl", "main.jsp");
+		mv.setViewName("index");
+		
+		return mv;
+	}
+	
+	/* mySelf 게시판으로 이동 */
+	@RequestMapping(value = "/mySelf/goMySelf.do", method = RequestMethod.GET)
+	public ModelAndView goMySelf(Locale locale, Model model) {
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("location", "index");
+		mv.addObject("menuUrl", "myself/mySelf.jsp");
+		mv.setViewName("index");
+		
+		return mv;
 	}
 }

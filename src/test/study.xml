@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
 	/* 스프링 프로젝트 만들기 */
-	https://hongku.tistory.com/115
+	https://hongku.tistory.com/115 참고
+	https://all-record.tistory.com/165
 	
 	1. spring mvc project 프로젝트 만들기
 		- marketplace에서 sts설치
@@ -22,6 +23,14 @@
 	      찾은 @RequestMapping에서  return값으로 view의 이름을 알려줌
 	      우리 프로젝트 HomeController.java에 "/" 메소드에 "/index"를 return 해줘서 prefix + /index + suffix 해서 화면 띄운다. 
   
+	4. home화면 띄우고 git에 올린다.
+		- https://coding-factory.tistory.com/244 참고
+		- git 레파지토리 생성하면 명령어 어떻게 입력해야하는지 나옴
+		
+	5. DB연결
+		- https://min-it.tistory.com/5 참고
+		- 사용할 데이터베이스의 jdbc maven 디펜던시 추가
+		- ORACLE은 jar파일 다운 필요
  -->
 
 <!-- 
@@ -33,17 +42,24 @@
 	/* 2021.03.30 에러 발생 */
 	beans:beans Failed to read schema document 'https://www.springframework.org/schema/beans/spring-beans.xsd', because 1) could not find the document; 2) the document could not be read; 3) the root element of the document is not <xsd:schema>.
 	
-	spring 버전과 servlet-context.xml의 xsi:schemaLocation 버전이 달라서 그런것임, xsd 버전을 변경하여 맞출 수 있음
-	pom.xml의 org.springframework-version 버전과 맞추면 된다.
+	spring 버전과 servlet-context.xml의 xsi:schemaLocation 버전이 달라서 그런것임
+	pom.xml의 org.springframework-version 버전을 맞추면 된다.
+ -->
+ 
+<!-- 
+	/* pom.xml (Project Object Model) */
+	프로젝트 내 빌드 옵션을 설정하는 부분
  -->
  
 <!--  
 	/* 빌드 자동화 도구 */
  	프로젝트 내에 작성한 java코드, xml, properties, jar파일들을 JVM이나 WAS가 인식할 수 있도록 패키징 해주는 과정
  	1. Maven 
- 		- java용 프로젝트 관리도구
+ 		- https://jeong-pro.tistory.com/168
+ 		- java용 프로젝트 관리도구, 즉 자바 소스를 compile하고, package해서 deploy하는 일을 자동화 해주는 것.
  		- 빌드중인 프로젝트, 빌드순서, 외부 라이브러리 관계를 pom.xml파일에 명시
  		- 외부저장소에서 라이브러리와 플러그인들을 다운로드 한 다음 로컬시스템의 캐시에 저장
+ 		- Force Update of Snapshots/Releases 항목은 스냅샷/릴리즈 강제 업데이트
  	2. Gradle
  		- Groovy언어를 사용한 Domain-specific-language를 사용 (xml을 사용하는 maven보다 코드가 훨씬 간결)
  		- 어느 프로젝트의 어느 부분이 업데이트 되었는지 알 수 있음
@@ -54,4 +70,17 @@
 	/* HTML 무료 템플릿 */
 	1. https://templated.co/
 	2. https://html5up.net/
+ -->
+ 
+<!-- 
+	/* Controller에서 return값 차이 */
+	https://ooeunz.tistory.com/101 참고
+	1. return "home"; -> home.jsp를 실행하라는 의미
+	2. return "redirect:/home"; ->RequestMapping에 value가 "home"인 걸 실행하라는 의미
+-->
+ 
+ <!-- 
+ 	/* 페이지 구성 */
+	jsp, controller, dao, service로 구성되고, 필요한 경우 vo도 추가한다.
+	jsp에서 ajax로 통신하여 controller를 호출한다.
  -->

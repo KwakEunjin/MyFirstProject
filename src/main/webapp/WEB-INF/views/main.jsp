@@ -10,9 +10,6 @@
 <title>홈페이지</title>
 <link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css" />
 <link href="/css/style.css" rel="stylesheet" type="text/css" media="screen" />
-<style type="text/css">
-@import "gallery.css";
-</style>
 </head>
 <body>
 	<!-- main --> 

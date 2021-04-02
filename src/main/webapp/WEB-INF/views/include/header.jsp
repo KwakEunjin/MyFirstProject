@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 
-<link href="/css/main.css?ver=2.3" rel="stylesheet" type="text/css"/>
+<link href="/css/main.css?ver=2.4" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 	<div id="header">
@@ -18,14 +18,12 @@
 	
 	<div id="menu">
 		<ul>
-			<li class="current_page_item"><a href="/mySelf/goMySelf.do">myself</a></li>
-			<li><a href="#">IT Info</a></li>
-			<li><a href="#">code review</a></li>
-			<li><a href="#">community</a></li>
-			<li class="last"><a href="#">Family Site</a></li>
+			<li class="current_page_item"><a href="/resume/goResume.do">resume</a></li>
+			<li><a href="/itInfo/goItInfo.do">IT Info</a></li>
+			<li><a href="/codeReview/goCodeReview.do">code review</a></li>
+			<li><a href="/community/goCommunity.do">community</a></li>
+			<li class="last"><a href="/familySite/goFamilySite.do">Family Site</a></li>
 		</ul>
 	</div>
-	
-	<div id="banner"><img src="/images/pics01.jpg" width="1000" height="361" alt="" /></div>
 </body>
 </html>

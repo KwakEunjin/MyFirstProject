@@ -4,7 +4,7 @@
 <head>
 <title>홈페이지</title>
 <link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css" />
-<link href="/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/css/style.css?ver=1.6" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
 
@@ -13,11 +13,14 @@
 		<jsp:include page="include/header.jsp"></jsp:include>
 	
 		<!-- main -->
-		<jsp:include page="${menuUrl}"></jsp:include> 
+		<div class="content">
+			<jsp:include page="${menuUrl}"></jsp:include>
+		</div>
+		 
+		<!-- footer -->
+		<jsp:include page="include/footer.jsp"></jsp:include>
 	</div>
 
-	<!-- footer -->
-	<jsp:include page="include/footer.jsp"></jsp:include>
 	
 </body>
 </html>

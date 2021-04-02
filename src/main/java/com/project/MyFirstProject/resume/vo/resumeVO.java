@@ -1,6 +1,6 @@
-package com.project.MyFirstProject.mySelf.vo;
+package com.project.MyFirstProject.resume.vo;
 
-public class mySelfVO {
+public class resumeVO {
 	private String name;
 	
 	public String getName() {

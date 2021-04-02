@@ -23,7 +23,7 @@ public class HomeController {
 	public ModelAndView home(Locale locale, Model model) {
 		ModelAndView mv = new ModelAndView();
 		mv.addObject("location", "index");
-		mv.addObject("menuUrl", "main.jsp");
+		mv.addObject("menuUrl", "include/main.jsp");
 		mv.setViewName("index");
 		
 		return mv;
@@ -34,18 +34,62 @@ public class HomeController {
 	public ModelAndView main(Locale locale, Model model) {
 		ModelAndView mv = new ModelAndView();
 		mv.addObject("location", "index");
-		mv.addObject("menuUrl", "main.jsp");
+		mv.addObject("menuUrl", "include/main.jsp");
 		mv.setViewName("index");
 		
 		return mv;
 	}
 	
-	/* mySelf 게시판으로 이동 */
-	@RequestMapping(value = "/mySelf/goMySelf.do", method = RequestMethod.GET)
-	public ModelAndView goMySelf(Locale locale, Model model) {
+	/* resume 게시판으로 이동 */
+	@RequestMapping(value = "/resume/goResume.do", method = RequestMethod.GET)
+	public ModelAndView goResume(Locale locale, Model model) {
 		ModelAndView mv = new ModelAndView();
 		mv.addObject("location", "index");
-		mv.addObject("menuUrl", "myself/mySelf.jsp");
+		mv.addObject("menuUrl", "resume/resume.jsp");
+		mv.setViewName("index");
+		
+		return mv;
+	}
+	
+	/* itInfo 게시판으로 이동 */
+	@RequestMapping(value = "/itInfo/goItInfo.do", method = RequestMethod.GET)
+	public ModelAndView goItInfo(Locale locale, Model model) {
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("location", "index");
+		mv.addObject("menuUrl", "itInfo/itInfo.jsp");
+		mv.setViewName("index");
+		
+		return mv;
+	}
+	
+	/* codeReview 게시판으로 이동 */
+	@RequestMapping(value = "/codeReview/goCodeReview.do", method = RequestMethod.GET)
+	public ModelAndView goCodeReview(Locale locale, Model model) {
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("location", "index");
+		mv.addObject("menuUrl", "codeReview/codeReview.jsp");
+		mv.setViewName("index");
+		
+		return mv;
+	}
+	
+	/* community 게시판으로 이동 */
+	@RequestMapping(value = "/community/goCommunity.do", method = RequestMethod.GET)
+	public ModelAndView goCommunity(Locale locale, Model model) {
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("location", "index");
+		mv.addObject("menuUrl", "community/community.jsp");
+		mv.setViewName("index");
+		
+		return mv;
+	}
+	
+	/* familySite 게시판으로 이동 */
+	@RequestMapping(value = "/familySite/goFamilySite.do", method = RequestMethod.GET)
+	public ModelAndView goFamilySite(Locale locale, Model model) {
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("location", "index");
+		mv.addObject("menuUrl", "familySite/familySite.jsp");
 		mv.setViewName("index");
 		
 		return mv;

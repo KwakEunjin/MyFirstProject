@@ -9,11 +9,10 @@ Released for free under the Creative Commons Attribution License
 body {
 	margin: 0;
 	padding: 0;
-	background: #276020 url(images/img01.jpg) repeat;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	font-weight: 200;
-	color: #61D953;
+	color: #000000;
 }
 
 h1, h2, h3 {
@@ -21,7 +20,7 @@ h1, h2, h3 {
 	padding: 0;
 	font-family: 'Sunflower', sans-serif;
 	font-weight: 300;
-	color: #FFFFFF;
+	color: #0a5079;
 }
 
 h1 {
@@ -46,14 +45,14 @@ ul, ol {
 
 a {
 	text-decoration: none;
-	color: #B3FFAA;
+	color: #0a5079;
 }
 
 a:hover {
 }
 
 #wrapper {
-	padding: 0;
+	padding: 0px 10%;
 	background: url(images/main-image-bg.jpg) no-repeat center top;
 }
 
@@ -61,7 +60,7 @@ a:hover {
 
 #header {
 	width: 940px;
-	height: 150px;
+	height: 80px;
 	margin: 0em auto;
 	padding: 1em;
 }
@@ -70,8 +69,8 @@ a:hover {
 
 #logo {
 	width: 960px;
-	height: 150px;
-	margin: 0px auto 30px auto;
+	height: 80px;
+	margin: 0 auto 1.5em auto;
 	color: #000000;
 }
 
@@ -90,18 +89,18 @@ a:hover {
 
 #logo p {
 	text-align: center;
-	color: #FFFFFF;
+	color: #fecc14;
 }
 
 #logo p a {
-	color: #FFFFFF;
+	color: #fecc14;
 }
 
 #logo a {
 	border: none;
 	background: none;
 	text-decoration: none;
-	color: #FFFFFF;
+	color: #fecc14;
 }
 
 /* Search */
@@ -118,7 +117,7 @@ a:hover {
 #search form {
 	height: 41px;
 	margin: 0;
-	padding: 10px 0 0 20px;
+	padding: 10px 0px 0px 20px;
 }
 
 #search fieldset {
@@ -151,11 +150,11 @@ a:hover {
 
 #menu {
 	overflow: hidden;
-	width: 1000px;
-	padding: 0px 0px;
-	margin: 0px auto 30px auto;
+	padding: 1.5em 0;
+	margin: 0px auto;
 	font-size: 20px;
 	color: #000000;
+	border-bottom: 1px dashed #063000;
 }
 
 #menu ul {
@@ -173,7 +172,7 @@ a:hover {
 #menu a {
 	display: block;
 	padding: 15px 40px 15px 40px;
-	background: #0C3E06;
+	background: #fecc14;
 	border-radius: 10px;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -190,7 +189,7 @@ a:hover {
 }
 
 #menu .current_page_item a {
-	background: #0C3E06;
+	background: #fecc14;
 	color: #FFFFFF;
 }
 
@@ -204,17 +203,15 @@ a:hover {
 	overflow: hidden;
 	width: 940px;
 	margin: 0px auto;
-	padding: 30px 30px;
+	padding: 1.5em 1.5em;
 	background: #FFFFFF;
 	border: 1px dashed #063000;
 }
 
 /* Content */
 
-#content {
-	float: left;
-	width: 600px;
-	padding: 10px 0px 0px 0px;
+.content {
+	margin:1.5em 0;
 }
 
 .post {
@@ -233,7 +230,7 @@ a:hover {
 }
 
 .post .meta {
-	height: 30px;
+	height: 1.5em;
 	border-bottom: 1px dashed #063000;
 	margin: 0px;
 	padding: 0px 0px 0px 0px;
@@ -278,7 +275,7 @@ a:hover {
 #sidebar {
 	float: right;
 	width: 280px;
-	padding: 30px 0px 0px 0px;
+	padding: 1.5em 0px 0px 0px;
 	color: #383838;
 }
 
@@ -295,7 +292,7 @@ a:hover {
 
 #sidebar li ul {
 	margin: 0px 0px;
-	padding-bottom: 30px;
+	padding-bottom: 1.5em;
 }
 
 #sidebar li li {
@@ -318,14 +315,14 @@ a:hover {
 }
 
 #sidebar h2 {
-	padding: 0px 0px 30px 0px;
+	padding: 0 0 1.5 0;
 	letter-spacing: -1px;
 	font-size: 1.8em;
 	color: #FFFFFF;
 }
 
 #sidebar p {
-	margin: 0 0px;
+	margin: 0px 0px;
 	padding: 10px 30px 20px 30px;
 	text-align: justify;
 }
@@ -365,10 +362,9 @@ a:hover {
 
 #footer {
 	overflow: hidden;
-	width: 1000px;
 	height: 200px;
-	margin: 0 auto;
-	padding: 40px 0 15px 0;
+	margin: 0px auto;
+	padding: 40px 0px 15px 0px;
 	border-top: 1px dashed #063000;
 }
 
@@ -377,25 +373,23 @@ a:hover {
 	padding-top: 20px;
 	line-height: normal;
 	text-align: center;
-	color: #81FD72;
+	color: 000000;
 }
 
 #footer a {
-	color: #81FD72;
+	color: #0a5079;
 }
 
 #three-columns {
 	overflow: hidden;
-	width: 1000px;
 	margin: 0px auto;
-	padding: 30px 0px;
-	border-bottom: 1px dashed #063000;
+	padding: 1.5em 0;
 	color: #ADFEA3;
 }
 
 #three-columns h2 {
 	padding: 0px 0px 20px 0px;
-	font-size: 30px;
+	font-size: 1.5em;
 	color: #FFFFFF;
 }
 
@@ -428,18 +422,16 @@ a:hover {
 	display: inline-block;
 	margin-top: 10px;
 	padding: 10px 25px;
-	background: #0C3E06;
+	background: #0a5079;
 	border-radius: 10px;
 	font-size: 20px;
 	color: #FFFFFF;
 }
 
 #welcome {
-	width: 1000px;
 	margin: 0px auto;
-	padding: 30px 0px;
-	border-bottom: 1px dashed #063000;
-	color: #ADFEA3;
+	padding: 3em 0 1.5em 0;
+	color: #000000;
 }
 
 #welcome h2 {
@@ -447,33 +439,31 @@ a:hover {
 }
 
 #welcome h2 a {
-	color: #FFFFFF;
+	color: #0a5079;
 }
 
 #welcome a {
-	color: #FFFFFF;
+	color: #0a5079;
 }
 
 #banner {
 	overflow: hidden;
-	width: 1000px;
 	margin: 0px auto;
-	padding: 30px 0px;
-	border-top: 1px dashed #063000;
+	padding: 1.5em 0 3em 0;
 	border-bottom: 1px dashed #063000;
 }
 
 #two-columns {
 	overflow: hidden;
-	width: 1000px;
 	margin: 0px auto;
-	padding: 30px 0px;
+	padding: 1.5em 0 3em 0;
+	border-bottom: 1px dashed #063000;
 }
 
 #two-columns #col1 {
 	float: right;
 	width: 640px;
-	color: #ADFEA3;
+	color: #000000;
 }
 
 #two-columns #col2 {
@@ -483,7 +473,7 @@ a:hover {
 
 #two-columns h2 {
 	padding: 0px 0px 20px 0px;
-	color: #FFFFFF;
+	color: #0a5079;
 }
 
 #two-columns .image-style {

@@ -1,6 +1,6 @@
-package com.project.MyFirstProject.mySelf.service;
+package com.project.MyFirstProject.resume.service;
 
-public class mySelfService {
+public class resumeService {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

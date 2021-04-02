@@ -18,7 +18,7 @@ public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
-	/* 메인으로 이동 */
+	/*  초기화면 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public ModelAndView home(Locale locale, Model model) {
 		ModelAndView mv = new ModelAndView();
@@ -29,7 +29,7 @@ public class HomeController {
 		return mv;
 	}
 	
-	/* 메인으로 이동 */
+	/* 메인으로 이동 */ 
 	@RequestMapping(value = "/main.do", method = RequestMethod.GET)
 	public ModelAndView main(Locale locale, Model model) {
 		ModelAndView mv = new ModelAndView();

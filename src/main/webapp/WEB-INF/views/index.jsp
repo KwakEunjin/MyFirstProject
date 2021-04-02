@@ -1,10 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
-<%-- <%@ include file="/WEB-INF/include/header.jsp"%>
-<%@ include file="/WEB-INF/include/footer.jsp"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"
---%>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>홈페이지</title>
@@ -13,15 +8,16 @@
 </head>
 <body>
 
-<div id="wrapper">
-	<!-- header -->
-	<jsp:include page="include/header.jsp"></jsp:include>
-
-	<!-- main -->
-	<jsp:include page="${menuUrl}"></jsp:include> 
-</div>
+	<div id="wrapper">
+		<!-- header -->
+		<jsp:include page="include/header.jsp"></jsp:include>
+	
+		<!-- main -->
+		<jsp:include page="${menuUrl}"></jsp:include> 
+	</div>
 
 	<!-- footer -->
 	<jsp:include page="include/footer.jsp"></jsp:include>
+	
 </body>
 </html>

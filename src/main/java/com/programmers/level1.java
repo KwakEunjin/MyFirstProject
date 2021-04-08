@@ -31,12 +31,15 @@ public class level1 {
         	}
         }
         
+        // TreeSet : 정렬과, 중복제거에 효율적인 HashMap
         TreeSet<Integer> t = new TreeSet(array);
+        // Iterator : Set, Map, List같은 요소들을 읽어오는 방법을 표준화 한 것 
         Iterator it = t.iterator();
 
         int[] answer = new int[t.size()];
         int index = 0;
         
+        // 중복제거하고 정렬한 결과를 answer에 담기
         while (it.hasNext()) {
         	answer[index] = (Integer) it.next();
         	index++;

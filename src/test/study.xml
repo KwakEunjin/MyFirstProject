@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
+	/* 참고 사이트 */
+	1. 스프링 프로젝트 만들기
+		- https://hongku.tistory.com/115 참고
+		- https://all-record.tistory.com/165
+	2. 게시판 만들기
+		- https://happy-inside.tistory.com/79
+	3. MongoDB 설정 및 사용
+		- https://cionman.tistory.com/47?category=758474
+ -->
+ 
+<!-- 
 	/* 스프링 프로젝트 만들기 */
-	https://hongku.tistory.com/115 참고
-	https://all-record.tistory.com/165
-	
 	1. spring mvc project 프로젝트 만들기
 		- marketplace에서 sts설치
 		- 메이븐을 통해 스프링 mvc에 필요한 디펜던시를 설치
@@ -88,5 +96,90 @@
  <!-- 
  	/* myBatis */
  	JDBC를 통해 데이터베이스에 액세스하는 작업을 한다.
- 	 
  -->
+ 
+ <!-- 
+ 	/* backend */
+ 	<인터넷>
+	 	1. 인터넷은 어떻게 작동할까?
+	 	2. HTTP는 무엇일까?
+	 	3. 브라우저와 동작 원리
+	 	4. DNS의 작동 원리
+	 	5. 도메인 네임은 무엇일까?
+	 	6. 호스팅은 무엇일까?
+ 	
+ 	<기본적인 프론트엔드 지식>
+ 		1. HTML
+ 		2. CSS
+ 		3. JavaScript
+ 	
+ 	<OS및 일반적인 지식>
+ 		1. 터미널 사용방법
+ 		2. OS의 일반적인 작동 방식
+ 		3. 프로세스 관리
+ 		4. 스레드와 동시성
+ 		5. 기본적인 터미널 명령어 (grep, awk, sed, lsof, curl, wget, tail, head, less, find, ssh, kill)
+ 		6. 메모리 관리
+ 		7. 프로세스간 통신(IPC
+ 		8. 입출력(I/O)관리
+ 		9. POSIX 기초 (stdin, stdout, stderr, pipes)
+ 		10. 기본적인 네트워크 개념
+ 		
+ 	<언어 배우기>
+ 		1. JAVA
+ 		2. C#
+ 		3. PHP
+ 		4. JavaSript
+ 		5. Python
+ 		6. Ruby
+ 		7. Rust
+ 		8. Go
+ 		
+ 	<Git 기본 사용법>
+ 		1. 버전관리 (무엇일까? 왜 사용할까?)
+ 		2. 저장소 호스팅 서비스 (계정 생성 및 깃허브 사용방법 배우기)
+ 	
+ 	<관계형 데이터베이스>
+ 		1. PostgreSQL
+ 		2. MySQL
+ 		3. MariaDB
+ 		4. MS SQL
+ 		6. Oracle
+ 		
+ 	<NoSQL 데이터베이스>
+ 		1. MongoDB
+ 		
+ 	<데이터베이스 상세정보>
+	 	1. ORM
+	 	2. ACID
+	 	3. 트랜잭션
+	 	4. N+1문제
+	 	5. 데이터베이스 정규화
+	 	6. 인덱스와 작동 방식
+	 	7. 데이터 레플리케이션
+	 	8. 샤딩전략
+	 	9. CAP이론
+	 	
+	<API에 대해서 배우기>
+		1. REST API
+		2. JSON APIs
+		3. 인증
+			1) OAuth
+			2) 기본적인 인증
+			3) 토큰 인증
+			4) JWT
+	
+	<캐싱>
+		1. CDN
+		2. 클라이언트 사이드
+		3. Redis
+		
+	<테스팅>
+		1. 통합테스트
+		2. 단위테스트
+		3. 기능테스트
+		
+ 	
+ -->
+ 
+ 

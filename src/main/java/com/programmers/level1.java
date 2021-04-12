@@ -127,7 +127,7 @@ public class level1 {
     	
         return answer;
         
-        // 2번
+        // 2번(stack)
         // https://velog.io/@lshjh4848/Java-%EC%8A%A4%ED%83%9DStack-%ED%81%B4%EB%9E%98%EC%8A%A4-%EC%A0%95%EB%A6%AC
     }
 }
